@@ -1,0 +1,58 @@
+
+/*1-a*/
+/*
+document.images[0];
+
+document.getElementsByTagName("img");
+*/
+
+/*1-b*/
+/*
+document.getElementsByClassName("bPink").City.children;
+
+*/
+
+/* 1-c */
+/*
+document.getElementsByTagName("table")[1].getElementsByTagName("td");
+*/
+/*1-d */
+/*
+document.getElementsByClassName("fontBlue bGrey");
+*/
+
+
+
+/* Q2 */
+/*
+let titleWebsite = document.getElementsByTagName("title")[0];
+//console.log(titleWebsite);
+ setInterval(function showDate() {
+  let date = new Date();
+  titleWebsite.innerText = date.toLocaleString();
+  //console.log(x);
+}, 1000);
+*/
+
+
+
+/* Q3 */
+/*
+let selectedImage = document.getElementsByTagName("img");
+selectedImage.src = "/images/5.jpg";
+let counter = 1;
+let loop;
+function startSliding(imgObject) {
+  loop = setInterval(function timing() {
+    if (counter > 8) counter = 1;
+    imgObject.src = `/images/${counter}.jpg`;
+    counter++;
+  }, 1000);
+}
+
+//startSliding(selectedImage[0]);
+//clearInterval(loop);
+
+startSliding(selectedImage[1]);
+clearInterval(loop);
+*/
